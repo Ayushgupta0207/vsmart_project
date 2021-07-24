@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+      <script src="https://kit.fontawesome.com/b4ffb712fb.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .heading{
+    text-align: center;
+    background-color:#6600cc;
+    color: white;
+    font-size:30px;
+    font-family: sans-serif;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+table th{
+    padding: 10px;
+    background-color:#ff0000;
+    color:white;
+    position: sticky;
+    top: 0;
+    border-radius: 25%;
+}
+table td{
+    padding: 10px;
+    
+    color: rgb(13, 2, 34);
+    font-family: sans-serif;
+}
+body{
+    margin: 0px;
+    width: auto;
+    text-decoration: none;
+}
+.top{
+    display: flex;
+    width: 100%;
+    padding: 8px 0;
+    background-color:white;
+    color:black;
+    padding-left: 0;
+}
+.top div{
+    padding: 8px 78px;
+}
+div a{
+    text-decoration: none;
+}
+div i{
+    padding: 5px;
+}
+.icons{
+  display: flex;
+  padding: 5px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+header{
+    display: flex;
+    align-items: center;
+     background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+}
+header div{
+    padding: 0px 150px;
+}
+header div a{
+    padding: 22px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ background-color:#d53369;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    text-align: center;
+ }
+ @importurl(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  
+   background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+
+.box{
+  background-image: url(Stock1.jpg);
+  height: 300px;
+  text-align: center;
+
+}
+.text{
+  font-size: 100px;
+  color: white;
+  padding-top: 2%;
+  font-family: Verdana;
+
+}
+
+.frame2 h1{
+font-size: 45px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+}
+.frame2 p{
+font-size: 15px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+}
+.column1{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.column2{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.column3{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.frame3{
+display: flex;
+} 
+.column h1{
+font-size: 25px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+margin-right:62px;
+}
+.count img{
+border-radius: 50%;
+margin-left: 130px;
+}
+.count{
+display: flex;
+}
+.count1 h1{
+color:black;
+margin-left:180px ;
+font-family:sans-serif;
+font-size:39px;
+}
+.count1 h2{
+color: black;
+margin-left: 180px;
+font-family: sans-serif;
+}
+.frame3 p{
+font-family: Verdana;
+font-size: 12px;
+color: black;
+}
+.frame4 p{
+font-family: sans-serif;
+font-size: 20px;
+text-align: center;
+color: white;
+}
+.frame4{
+background-color:#ff7733;
+padding-top:3%;
+padding-bottom:3%;
+}
+.final h1{
+    color:black;
+    font-family: sans-serif;
+    font-size:30px;
+    text-align: center;
+}
+.final{
+background-color: #e6f2ff;
+padding-top:3%;
+padding-bottom:3%;
+}
+.stocks{
+  background-color:white;
+}
+.ct{
+  background-image: url(contact.jpg);
+  padding-top:20px;
+  padding-bottom: 4px;
+}
+</style>
+<body>
+     <div class="top">
+        <div>Ayush Gupta : <a href="tel :+91-6388649039">6388649039</a></div>
+        <div>Ansh Saxena : <a href="tel :+91-9084462220">9084452220</a></div>
+        <div>
+            <a href="mailto:ayushgahoi2001@gmail">vsmart@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+    </div>
+    <header>
+        <div>
+            <img src="logo2.jpg" height="80px" width="280px">
+        </div>
+        <div>
+             <a href="home.html" target="_top">Home</a>
+            <a href="aboutus.html" target="_top">About Us</a>
+            <a href="stock.html" target="_top">StockDetails</a>
+            <a href="contact.html" target="_top">Contact Us</a>
+        </div>
+    </header>
+    <div class="box">
+        <div class="text">
+            <p>About Us</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="frame2">
+        <h1>Delivering quality products to the world</h1>
+        <p>We operate with a coherent supply chain and a farm-to-fork model using a vertically integrated infrastructure
+            of essential products.</p>
+        <p>hatcheries and processing plants. This is achieved through constant upgradation of aquaculture technology,
+            delivering the very best of technical</p>
+        <p>services to our farmers and adhering to quality standards for global shrimp consumers.</p>
+        <br>
+        <p>Our management has laid out a strategic route map that will effectively outline all business challenges.
+            Avanti’s core fundamentals are – Innovation,</p>
+        <p>R&D, Sourcing and Sustainability. By employing these values, we engage with our farmers & customers, develop
+            better products and meet our</p>
+        <p>consumers’ needs with refined service and full traceability.</p>
+    </div>
+    <br><br>
+    <div class="frame3">
+        <div class="column1">
+            <img src="mission.png" height="230px" width="360px">
+            <h1>Our Mission</h1>
+            <table>
+                <tr>
+                    <td>
+                        <p>Our mission is to achieve the leading position as a distinguished & absolute end-to-end
+                            information technology infrastructure & service provider. We want to develop with profitable
+                            growth through superior Customer service, Innovation, Quality and Commitment.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column2">
+            <img src="plan.png" height="230px" width="360px">
+            <h1>Our Plan</h1>
+            <table>
+                <tr>
+                    <td>
+                        <p>Our plan is to achieve the leading position as a distinguished & absolute end-to-end
+                            information technology infrastructure & service provider. We want to develop with profitable
+                            growth through superior Customer service, Innovation, Quality and Commitment.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column3">
+            <img src="vision.png" height="230px" width="300px">
+            <h1>Our Vision</h1>
+            <table>
+                <tr>
+                    <td>
+                        <p>Our visoin is to achieve the leading position as a distinguished & absolute end-to-end
+                            information technology infrastructure & service provider. We want to develop with profitable
+                            growth through superior Customer service, Innovation, Quality and Commitment.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="count">
+        <div class="count1">
+            <img src="count1.png" alt="avatar" height="200px" width="200">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="count2">1000000</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Customers</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="count1">
+            <img src="count2.jpg" alt="avatar" height="200px" width="200">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="count2">132</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Partners</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="count1">
+            <img src="count3.png" alt="avatar" height="200px" width="200">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="count2">2500</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Stores</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="count1">
+            <img src="count4.png" alt="avatar" height="200px" width="200">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="count2">7500</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Employees</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <div class="frame4">
+        <p>We deliver scientifically formulated and nutritionally well-balanced shrimp feed to our farmers. Our highly
+            equipped testing labs ensure quality of feed, and our technical teams assist farmers across India with good
+            aquaculture practices, seed selection and seed quality analysis. Not only has this earned us the trust of
+            the country’s farming community but secured a reputable clientele throughout the world.</p>
+        <p>
+            By introducing competent and innovative technologies, we aim to improve shrimp culture development and feed
+            manufacturing in India. Our emphasis is on productivity, reliability and customer service. By providing our
+            farmers with high quality feed and seed, we obtain better shrimp produce, which is further processed
+            upgraded into export-ready shrimp products for our customers around the world.
+        </p>
+
+    </div>
+    <div class="Slide">
+        <marquee behavior="scroll" direction="right" scrollamount="30" loop="100">
+            <img src="slide0.png" height="600px" width="1300px">
+            <img src="slide1.png" height="600px" width="1300px">
+            <img src="slide2.jpg" height="600px" width="1300px">
+            <img src="slide4.jpg" height="600px" width="1300px">
+
+        </marquee>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="final">
+        <h1>With this goal of expanding VS MART network, we create a familial ecosystem based on performance,
+            sustainability and growth.</h1>
+    </div>
+    <div class="footer">
+        <p>Privacy Policy &copy By 2021 VS MART</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.count2').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+
+</body>
+
+</html>

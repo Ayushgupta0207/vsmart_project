@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4ffb712fb.js" crossorigin="anonymous"></script>
+    <style>
+    .heading{
+    text-align: center;
+    background-color:#6600cc;
+    color: white;
+    font-size:30px;
+    font-family: sans-serif;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+table th{
+    padding: 10px;
+    background-color:#ff0000;
+    color:white;
+    position: sticky;
+    top: 0;
+    border-radius: 25%;
+}
+table td{
+    padding: 10px;
+    
+    color: rgb(13, 2, 34);
+    font-family: sans-serif;
+}
+body{
+    margin: 0px;
+    width: auto;
+    text-decoration: none;
+}
+.top{
+    display: flex;
+    width: 100%;
+    padding: 8px 0;
+    background-color:white;
+    color:black;
+    padding-left: 0;
+}
+.top div{
+    padding: 8px 70px;
+}
+div a{
+    text-decoration: none;
+}
+div i{
+    padding: 5px;
+}
+.icons{
+  display: flex;
+  padding: 5px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+   padding-top:7px;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+header{
+    display: flex;
+    align-items: center;
+    background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+}
+header div{
+    padding: 0px 144px;
+}
+header div a{
+    padding: 25px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ background-color:#d53369;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    text-align: center;
+ }
+
+ @importurl(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  
+  background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+
+.box{
+  background-image: url(Stock1.jpg);
+  height: 300px;
+  text-align: center;
+
+}
+.text{
+  font-size: 100px;
+  color: white;
+  padding-top: 2%;
+  font-family: Verdana;
+
+}
+
+.frame2 h1{
+font-size: 45px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+}
+.frame2 p{
+font-size: 15px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+}
+.column1{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.column2{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.column3{
+padding-top:2px;
+padding-left:2px;
+padding-right: 2px;
+border-radius: 25px;
+background: white;
+height: 400px;
+text-align: center;
+}
+.frame3{
+display: flex;
+} 
+.column h1{
+font-size: 25px;
+color: black;
+font-family: sans-serif;
+text-align: center;
+margin-right:62px;
+}
+.count img{
+border-radius: 50%;
+margin-left: 130px;
+}
+.count{
+display: flex;
+}
+.count1 h1{
+color:black;
+margin-left:180px ;
+font-family:sans-serif;
+font-size:39px;
+}
+.count1 h2{
+color: black;
+margin-left: 180px;
+font-family: sans-serif;
+}
+.frame3 p{
+font-family: Verdana;
+font-size: 12px;
+color: black;
+}
+.frame4 p{
+font-family: sans-serif;
+font-size: 20px;
+text-align: center;
+color: white;
+}
+.frame4{
+background-color:#ff7733;
+padding-top:3%;
+padding-bottom:3%;
+}
+.final h1{
+    color:black;
+    font-family: sans-serif;
+    font-size:30px;
+    text-align: center;
+}
+.final{
+background-color: #e6f2ff;
+padding-top:3%;
+padding-bottom:3%;
+}
+.stocks{
+  background-color:white;
+}
+.ct{
+  background-image: url(contact.jpg);
+  padding-top:20px;
+  padding-bottom: 4px;
+}
+.container img{
+  width: 100%;
+  height: 600px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered h1{
+  text-align: center;
+  color:white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  
+}
+.centered h2{
+   text-align: center;
+  color: whitesmoke;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 30px; 
+}
+
+</style>
+</head>
+<body>
+    <div class="top">
+        <div>Ayush Gupta : <a href="tel :+91-6388649039">6388649039</a></div>
+        <div>Ansh Saxena : <a href="tel :+91-9084462220">9084452220</a></div>
+        <div>
+            <a href="mailto:ayushgahoi2001@gmail">vsmart@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+    </div>
+    <header>
+        <div>
+            <img src="logo2.jpg" height="80px" width="280px">
+        </div>
+        <div>
+            <a href="home.html" target="_top">Home</a>
+            <a href="aboutus.html" target="_top">About Us</a>
+            <a href="stock.html" target="_top">StockDetails</a>
+            <a href="contact.html" target="_top">Contact Us</a>
+        </div>
+    </header>
+    <div class="container">
+        <img src="home1.jpg" alt="">
+        <div class="centered"><h1>WELCOME TO VS MART</h1>
+            <h2>an online stock manangement company</h2>
+            <hr></div>
+    </div>
+    <div class="footer">
+        <p>Privacy Policy &copy By 2021 VS MART</p>
+    </div>
+</body>
+</html>

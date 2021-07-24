@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="https://kit.fontawesome.com/b4ffb712fb.js" crossorigin="anonymous"></script>
+       <script>
+function validateForm() {
+  var x = document.forms["myForm"]["username"].value;
+  if (x == "" || x == null) {
+    alert("Form must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<style>
+    .container img{
+  width: 100%;
+  height: 500px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered p{
+  text-align: center;
+  color:black;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 96%;
+  padding: 13px;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  box-sizing :border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0px;
+  width: 170px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background:#833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h3{
+  align-content: center;
+  padding-left: 590px;
+}
+</style>
+<body>
+    <div class="top">
+        <div>Ayush Gupta : <a href="tel :+91-6388649039">6388649039</a></div>
+        <div>Ansh Saxena : <a href="tel :+91-9084462220">9084452220</a></div>
+        <div>
+            <a href="mailto:ayushgahoi2001@gmail">vsmart@gmail.com</a>
+        </div>
+
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+    </div>
+    <header>
+        <div>
+            <img src="logo2.jpg" height="80px" width="280px">
+        </div>
+        <div>
+             <a href="home.html" target="_top">Home</a>
+            <a href="aboutus.html" target="_top">About Us</a>
+            <a href="stock.html" target="_top">StockDetails</a>
+            <a href="contact.html" target="_top">Contact Us</a>
+        </div>
+    </header>
+    <h1>Contact Form</h1>
+
+<div class="contact">
+  <form action="Contact" name = "myForm" onsubmit="return validateForm()" method="post" required>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="first_name" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="last_name" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject(optional)</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    
+    
+
+</body>
+</html>
